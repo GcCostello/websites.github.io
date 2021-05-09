@@ -20,7 +20,7 @@ let filmerChart = new Chart(myChart, {
         ]
     },
     options: {
-        borderWidth: 4,
+        borderWidth: 2,
         pointStyle: 'circle',
         radius: 5,
         pointHoverRadius: 20,
