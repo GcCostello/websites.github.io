@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GcCostello</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="wrapperPortfolio">
+    <main>
+
+        <header>
+
+        </header>
+
+        <button onclick="back()" class="backBtn"><i class="fa-solid fa-angle-left"></i> Tillbaka</button>
+
+        <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+
+        <article id="content">
+
+            <div class="flow">
+                <h1>
+                    <strong>Prototyp</strong> - Bokningssystem
+                </h1>
+                <p>Roll: allt<br>
+                Programvara: figma<br>
+                Slutprodukt: prototyp av bokningssystem</p>
+                <h3>Översikt</h3>
+                <p>
+                    För ett projekt på Högskolan Dalarna skulle ett äldre bokningssystem förnyas och förbättras. Via systemet kunde studenter boka mediautrustning 
+                    som t.ex. systemkameror och studioblixtar. För att boka var man tvungen att ha ett konto och det kunde man skaffa om man studerade 
+                    på ett specifikt program. Genom att logga in på sitt konto kunde man kolla bl.a. historik, pågående bokningar och kommande bokningar.
+                </p>
+                <img src="img/alster_19201080.png" alt="" class="contentImg">
+                <h3>Varför behövdes en ny?</h3>
+                <p>
+                    Det äldre systemet gjorde visserligen sitt jobb eftersom man kunde boka utrustning men den har troligen hängt med sedan 90-talet utan att 
+                    uppdateras och det har sina konsekvenser. Den hade milt sagt väldigt dålig UX, under ett steg krävdes exempelvis mobilnummer men det fanns 
+                    ingen information om varför det behövdes och under ett annat steg fanns det ingenting att välja eller göra för att det valdes redan i steget före. 
+                    Systemets UI var ännu sämre. Med fokus på slutanvändarna kunde redesignen börja
+                </p>
+                
+                <h3>Fokus på slutanvändarna</h3>
+                <p>
+                    Genom intervjuer med studenter i början av arbetet kunde jag tydliggöra vad som önskades, inte önskades och det som prioriterades av bokningssystemet. 
+                    När, hur och i vilka situationer systemet kom till användning framkom också vilket var mycket användbar information till det fortsatta arbetet.                    
+                </p>
+                <p>
+                    Eftersom många idag använder mobilen och att man ska designa och koda för mobile first så valdes just mobilformat till prototypen. 
+                    Det var även en bra utmaning att få all nödvändig information på en mindre skärm. Skisser över olika sidor och sektioner av systemet togs 
+                    fram så det fanns en bra grund att ha när arbetet flyttades över till Figma.   
+                </p>
+                
+                <div class="split">
+                    <img src="img/start.jpg" alt="" class="contentImg flex">
+                    <img src="img/mittkonto.jpg" alt="" class="contentImg">    
+                </div>
+
+                <p>
+                    Längre fram gjordes även en card sorting via UXtweak för att samla in information specifikt om utrustningen och hur den skulle delas upp i olika 
+                    kategorier. Det gav bra information om hur utrustningen skulle delas upp i systemet för att en möjlig student lätt skulle kunna hitta en önskad produkt att boka.
+                </p>
+
+                <h3>Resultat</h3>
+                <p>
+                    Slutprodukten blev en interaktiv prototyp där användaren först ska logga in alternativ skapa ett konto, sen kan önskade produkter 
+                    sökas fram och bokas. En sida över användarens konto skapades också där de kan se deras information, aktuella bokningar och historik. 
+                    En tydlig design och struktur skapades med fokus på och hänsyn till målgruppen och den informationen som framkom under intervjuerna och testerna.                   
+                </p>
+                <p>
+                    Se prototypen <a href="https://www.figma.com/proto/akPvLnbPkGev1LkecYKz5t/U4_costello_glenn?page-id=0%3A1&node-id=2%3A3&viewport=241%2C48%2C0.23&scaling=scale-down&starting-point-node-id=196%3A504&show-proto-sidebar=1" target="_blank">här! <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </p>
+
+                <button onclick="back()" class="backBtn"><i class="fa-solid fa-angle-left"></i> Tillbaka</button>
+
+            </div>
+            
+
+        </article>
+
+        <footer>
+
+            <p>copyright GcCostello</p>
+
+        </footer>
+
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

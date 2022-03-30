@@ -1,0 +1,154 @@
+/* STARTSEKTION */
+
+#start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-block: auto;
+    min-height: 95vh;
+    padding: 1rem;
+}
+
+/* PORTFOLIOSEKTION */
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.alsterContainer {
+    margin-inline: auto;
+    grid: auto-flow / repeat(1, 1fr);
+    display: grid;
+    gap: 0.6rem;
+}
+
+.alsterCard {
+    overflow: hidden;
+}
+
+.alsterContainer > div {
+    position: relative;
+    max-width: 345px;
+    max-height: 345px;
+    z-index: 1;
+}
+
+.alsterContainer > * > * > img {
+    max-width: 100%;
+    opacity: 0.8;
+    overflow: hidden;
+    transition: all 0.45s ease-in-out;
+    z-index: 1;
+}
+
+.alsterContainer > * > * > img:hover {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+}
+
+/* FOTOSEKTION */
+
+.galleri {
+    margin-inline: auto;
+    grid: auto-flow / repeat(1, 1fr);
+    display: grid;
+    gap: 0.6rem;
+}
+
+.galleri > div {
+    /* position: relative; */
+    max-width: 400px;
+    max-height: 400px;
+    overflow: hidden ;
+}
+
+.galleri > *  > img {
+    width: 100%;
+}
+
+/* .galleri > *  > img {
+    transition: all 300ms ease-in-out;
+    opacity: 0.8;
+    filter: blur(2px) grayscale(100%);
+}
+
+.galleri > *  > img:active, img:hover {
+    opacity: 1;
+    filter: blur(0px) grayscale(0%);
+} */
+
+#fotografering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+/* KONTAKTSEKTION */
+
+#kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block: auto;
+    min-height: 90vh;
+    padding: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 520px) {
+
+    .alsterContainer {
+        grid: auto-flow / repeat(2, 1fr);
+    }
+
+    .galleri {
+        grid: auto-flow / repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+    .alsterContainer {
+        grid: auto-flow / repeat(2, 1fr);
+    }
+
+    #start {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .galleri {
+        grid: auto-flow / repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 1080px) {
+
+   .alsterContainer {
+        grid: auto-flow / repeat(3, 1fr);
+    }
+
+    .galleri {
+        grid: auto-flow / repeat(3, 1fr);
+    }
+
+    #fotografering {
+        margin-top: 0rem;
+    }
+}
