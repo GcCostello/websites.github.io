@@ -19,5 +19,5 @@ function topFunction() {
 
 function back() {
   history.back();
-  window.location.replace('http://127.0.0.1:5501/index.html#portfolio');
+  window.location.replace('https://gccostello.github.io/websites.github.io/portfolio/');
 }
