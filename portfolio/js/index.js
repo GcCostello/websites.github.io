@@ -19,5 +19,5 @@ function topFunction() {
 
 function back() {
   history.back();
-  window.location.replace('https://gccostello.github.io/websites.github.io/portfolio/');
+  window.location.replace('https://gccostello.github.io/websites.github.io/portfolio/#portfolio');
 }
