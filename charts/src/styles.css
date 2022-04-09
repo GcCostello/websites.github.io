@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+}
+
+a:hover {
+    color: darkslategray;
+    font-size: 2rem;
+}
