@@ -12,83 +12,39 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </head>
-<body class="d-flex flex-column min-vh-100">
+
+<body class="d-flex flex-column min-vh-100" onload="loadJSON()">
     
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 border-bottom border-info">
-    <a class="navbar-brand text-info" href="index.html">Bok-Xpress</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-          
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-                
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-th mr-2"></i>Våra böcker
-                </a>
-            <div class="dropdown-menu" style="width:300px" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="deckare.html">Deckare</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="natur.html">Natur</a>
-            </div>
-            </li>
-                
-            <li class="nav-item">
-                <a class="nav-link" href="erbjudanden.html">Erbjudanden</a>
-            </li>
-        </ul>
-            
-        <form class="form-inline">
-            <input class="form-control mx-0 bg-white border-info" type="search" placeholder="Sök efter böcker" aria-label="Search" style="border-radius: 5px 0px 0px 5px;">
-            <a class="btn btn-info mx-0" href="#" style="border-radius: 0px 5px 5px 0px;">
-                <i class="fas fa-search"></i>
-            </a>
-        </form>
-    
-        <div class="btn-group">
-            <a class="btn btn-info ml-lg-2 my-2" href="#" style="border-radius: 5px 0px 0px 5px;">
-                <i class="fas fa-shopping-cart mr-2"></i>Varukorg
-            </a>
-            <a class="btn btn-info my-2" href="#" style="border-radius: 0px 5px 5px 0px;">
-                Mina sidor<i class="fas fa-shopping-cart ml-2"></i>
-            </a>
-        </div>
-    </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 border-bottom border-info" id="navbar">
 </nav>
 
-<div class="jumbotron jumbotron-fluid bg-info mb-0 mt-auto">
-    <div class="container text-white">
-        <div class="row">
-            <div class="col">
-                <h6 class="mb-3">Bok-Xpress</h6>
-                <p class="my-1">Om Bok-Xpress</p>
-                <p class="my-1">Jobba hos oss</p>  
-                <p class="my-1">Pressrum</p> 
+<!-- KARUSELL -->
+    <div class="container bg-info shadow-sm p-1 col-lg-2 mt-3" style="width:300px;">
+        <h1 class="text-center text-white pb-2">Kampanj</h1>
+        <h2 class="text-center text-white pb-2">Naturböcker</h2>
+        <div id="caro" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner d-flex text-center">
+
             </div>
-            <div class="col">
-                <h6 class="mb-3">Kundservice</h6>      
-                <p class="my-1">Vanliga frågor & svar</p>
-                <p class="my-1">Frakt & leverans</p>
-                <p class="my-1">Kontakta oss</p>
-                <p class="my-1">Villkor</p>
-            </div>
-            <div class="col">
-                <h6 class="mb-3">Mitt konto</h6>      
-                <p class="my-1">Logga in</p>
-                <p class="my-1">Mina beställningar</p>
-                <p class="my-1">Önskelistor</p>
-            </div>
-            <div class="col">
-                <h6 class="mb-3">Personuppgifter</h6>      
-                <p class="my-1">Kunduppgifter</p>
-                <p class="my-1">Hantering av cookies</p>
-            </div>
+
+            <a class="carousel-control-prev" href="#caro" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#caro" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
+        <p class="text-center p-2 mt-2 text-white">Använd koden: BILLIGNATUR <br>i kassan och få hela 25%!</p>
     </div>
+
+<!-- FOOTER -->
+<div id="footer" class="mt-auto">
 </div>
-<footer class="bg-info text-white d-flex justify-content-center pb-3">
-    <h6>Bok-Xtra Copyright © 2020</h6>
-</footer>
+
+<script src="js/erbjudanden.js"></script>
+<script src="js/navplusfooter.js"></script>
+
 </body>
 </html>
