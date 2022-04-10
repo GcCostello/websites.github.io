@@ -22,3 +22,60 @@ html {
     max-width: 70rem;
     background-color: var(--white);
 }
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Overpass', sans-serif;
+    line-height: 1.1em;
+    color: var(--black);
+    max-width: 21ch;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 6vw, 3rem);
+    font-weight: 900 ;
+}
+
+h2 {
+    font-size: clamp(2.2rem, 6vw, 2.8rem);
+    font-weight: 800;
+}
+
+h3 {
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
+    font-weight: 700;
+}
+
+p {
+    font-size: clamp(1.2rem, 2vw, 1.3rem);
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--black);
+    max-width: 80ch;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.2rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+a::after {
+    content: '';
+    width: 0px;
+    height: 0.2rem;
+    display: block;
+    background: var(--accent);
+    transition: ease-in-out 300ms;
+    border-radius: 10% 24% 18% 38%;
+}
+
+
+a:hover::after {
+    width: 100%;
+}
