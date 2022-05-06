@@ -46,7 +46,7 @@ p {
 }
 
 .card {
-    margin-top: 30vh;
+    margin-top: 20vh;
     display: flex;
     align-items: center;
     flex-direction: column;
