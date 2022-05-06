@@ -28,6 +28,9 @@ body {
                         45vw 43vh;
     background-repeat: no-repeat;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h2 {
