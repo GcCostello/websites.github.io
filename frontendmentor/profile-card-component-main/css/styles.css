@@ -19,18 +19,15 @@
 
 }
 
-html {
-    height: 100vh;
-}
-
 body {
+    min-height: 100vh;
     background-color: var(--primary);
     background-image: url(../images/bg-pattern-top.svg),
         url(../images/bg-pattern-bottom.svg);
-    background-position:    bottom 37vh left -40vw, 
-                            top 45vh right -40vw;
+    background-position: right 51vw bottom 70vh,
+                        45vw 43vh;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    overflow: hidden;
 }
 
 h2 {
