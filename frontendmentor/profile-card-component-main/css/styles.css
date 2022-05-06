@@ -24,8 +24,8 @@ body {
     background-color: var(--primary);
     background-image: url(../images/bg-pattern-top.svg),
         url(../images/bg-pattern-bottom.svg);
-    background-position: right 51vw bottom 70vh,
-                        45vw 43vh;
+    background-position: right 51vw bottom 45vh,
+                        50vw 45vh;
     background-repeat: no-repeat;
     overflow: hidden;
     display: flex;
