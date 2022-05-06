@@ -27,6 +27,13 @@ html {
     margin-top: var(--flow-space, 1em);
 }
 
+hr {
+    color: #577399;
+    border: solid 1px;
+    width: 220px;
+    --flow-space: 0;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Overpass', sans-serif;
     line-height: 1.1em;
@@ -47,6 +54,13 @@ h2 {
 h3 {
     font-size: clamp(1.8rem, 6vw, 2.4rem);
     font-weight: 700;
+    --flow-space: 1em;
+}
+
+h4 {
+    font-size: clamp(1.4rem, 6vw, 1.8rem);
+    font-weight: 600;
+    --flow-space: 1em;
 }
 
 p {
@@ -54,6 +68,7 @@ p {
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--black);
     max-width: 80ch;
+    --flow-space: 0.4em;
 }
 
 a {
@@ -78,4 +93,39 @@ a::after {
 
 a:hover::after {
     width: 100%;
+}
+
+nav {
+    margin-top: 20%;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social > i:hover {
+    cursor: pointer;
+    color: var(--accent);
+    transform: scale(1.1, 1.1);
+    transition: all 0.45s ease-in-out;
+}
+
+.social a {
+    display: inherit;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.social a:hover {
+    cursor: pointer;
+    color: var(--accent);
+    transform: scale(1.1, 1.1);
+    transition: all 0.45s ease-in-out;
+}
+
+.social a::after {
+    height: 0rem;
 }
