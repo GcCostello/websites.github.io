@@ -109,3 +109,7 @@ p {
 .attribution {
     margin-top: 30vh;
 }
+
+.attribution > p {
+    color: black;
+}
